@@ -1,0 +1,1069 @@
+[
+	{
+		"id": 1,
+		"name": "Advanced React Native",
+		"instructor": "John Doe",
+		"description": "Start your journey with React Native and build foundational skills.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 11,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 12,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 13,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 14,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 15,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 16,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 17,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 18,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 19,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 20,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "React Native for Beginners",
+		"instructor": "Chris Wilson",
+		"description": "Discover the power of React Native Hooks and enhance your app development.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 21,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 22,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 23,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 24,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 25,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 26,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 27,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 28,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 29,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 30,
+				"name": "David Black",
+				"email": "david@example.com"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Mastering React Native",
+		"instructor": "Jane Smith",
+		"description": "Learn the basics of React Native development and build your first mobile app.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 31,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 32,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 33,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 34,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 35,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 36,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 37,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 38,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 39,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 40,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Introduction to React Native",
+		"instructor": "Emily Davis",
+		"description": "Take your React Native skills to the next level with advanced concepts and techniques.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 41,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 42,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 43,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 44,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 45,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 46,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 47,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 48,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 49,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 50,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			}
+		]
+	},
+	{
+		"id": 51,
+		"name": "Advanced React Native",
+		"instructor": "Michael Brown",
+		"description": "Discover the power of React Native Hooks and enhance your app development.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 511,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 512,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 513,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 514,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 515,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 516,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 517,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 518,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 519,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 520,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			}
+		]
+	},
+	{
+		"id": 52,
+		"name": "React Native for Beginners",
+		"instructor": "Michael Brown",
+		"description": "Start your journey with React Native and build foundational skills.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 521,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 522,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 523,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 524,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 525,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 526,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 527,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 528,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 529,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 530,
+				"name": "David Black",
+				"email": "david@example.com"
+			}
+		]
+	},
+	{
+		"id": 53,
+		"name": "Mastering React Native",
+		"instructor": "Jane Smith",
+		"description": "Take your React Native skills to the next level with advanced concepts and techniques.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 531,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 532,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 533,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 534,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 535,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 536,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 537,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 538,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 539,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 540,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			}
+		]
+	},
+	{
+		"id": 54,
+		"name": "Introduction to React Native",
+		"instructor": "Emily Davis",
+		"description": "Learn the basics of React Native development and build your first mobile app.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Building Your First App",
+				"content": "Creating a simple mobile app using React Native components."
+			}
+		],
+		"students": [
+			{
+				"id": 541,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 542,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 543,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 544,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 545,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 546,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 547,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 548,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 549,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 550,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			}
+		]
+	},
+	{
+		"id": 55,
+		"name": "React Native for Designers",
+		"instructor": "Robert Martinez",
+		"description": "A course tailored for designers to understand and use React Native effectively.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "6 weeks",
+		"schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+		"location": "Online",
+		"prerequisites": [
+			"Basic JavaScript knowledge",
+			"Familiarity with design tools"
+		],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to React Native",
+				"content": "Overview of React Native, setting up your development environment."
+			},
+			{
+				"week": 2,
+				"topic": "Designing with React Native",
+				"content": "Creating designs and using them in your React Native projects."
+			}
+		],
+		"students": [
+			{
+				"id": 551,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 552,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 553,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 554,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 555,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 556,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 557,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 558,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 559,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 560,
+				"name": "David Black",
+				"email": "david@example.com"
+			}
+		]
+	},
+	{
+		"id": 56,
+		"name": "Building Responsive Apps with React Native",
+		"instructor": "Laura Moore",
+		"description": "Learn how to build responsive mobile applications using React Native.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to Responsive Design",
+				"content": "Overview of responsive design principles and React Native."
+			},
+			{
+				"week": 2,
+				"topic": "Building Responsive Layouts",
+				"content": "Creating layouts that adapt to different screen sizes."
+			}
+		],
+		"students": [
+			{
+				"id": 561,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 562,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 563,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 564,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 565,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 566,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 567,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 568,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 569,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 570,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			}
+		]
+	},
+	{
+		"id": 57,
+		"name": "React Native and Redux",
+		"instructor": "Daniel Taylor",
+		"description": "Understand state management in React Native using Redux.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to Redux",
+				"content": "Overview of Redux and its principles."
+			},
+			{
+				"week": 2,
+				"topic": "Using Redux with React Native",
+				"content": "Integrating Redux into your React Native projects."
+			}
+		],
+		"students": [
+			{
+				"id": 571,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 572,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 573,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 574,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 575,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 576,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 577,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 578,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 579,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 580,
+				"name": "David Black",
+				"email": "david@example.com"
+			}
+		]
+	},
+	{
+		"id": 58,
+		"name": "React Native Animations",
+		"instructor": "Sophia Lee",
+		"description": "Learn how to create stunning animations in your React Native applications.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to Animations",
+				"content": "Overview of animation principles and tools in React Native."
+			},
+			{
+				"week": 2,
+				"topic": "Creating Basic Animations",
+				"content": "Implementing simple animations in your projects."
+			}
+		],
+		"students": [
+			{
+				"id": 581,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 582,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 583,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 584,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 585,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 586,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 587,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 588,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 589,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 590,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			}
+		]
+	},
+	{
+		"id": 59,
+		"name": "Building Scalable Apps with React Native",
+		"instructor": "Jacob Anderson",
+		"description": "Learn techniques for building scalable and maintainable React Native applications.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to Scalability",
+				"content": "Overview of scalable architecture and patterns."
+			},
+			{
+				"week": 2,
+				"topic": "Building Scalable Components",
+				"content": "Creating components that scale well in large applications."
+			}
+		],
+		"students": [
+			{
+				"id": 591,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 592,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 593,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 594,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 595,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 596,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 597,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 598,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 599,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 600,
+				"name": "David Black",
+				"email": "david@example.com"
+			}
+		]
+	},
+	{
+		"id": 60,
+		"name": "React Native Testing",
+		"instructor": "Andrew Walker",
+		"description": "Learn how to effectively test React Native applications.",
+		"enrollmentStatus": "Open",
+		"thumbnail": "your.image.here",
+		"duration": "8 weeks",
+		"schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+		"location": "Online",
+		"prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+		"syllabus": [
+			{
+				"week": 1,
+				"topic": "Introduction to Testing",
+				"content": "Overview of testing principles and tools for React Native."
+			},
+			{
+				"week": 2,
+				"topic": "Writing Your First Test",
+				"content": "Creating and running basic tests for your applications."
+			}
+		],
+		"students": [
+			{
+				"id": 601,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 602,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 603,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 604,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			},
+			{
+				"id": 605,
+				"name": "Carol White",
+				"email": "carol@example.com"
+			},
+			{
+				"id": 606,
+				"name": "David Black",
+				"email": "david@example.com"
+			},
+			{
+				"id": 607,
+				"name": "Eve Brown",
+				"email": "eve@example.com"
+			},
+			{
+				"id": 608,
+				"name": "Frank Green",
+				"email": "frank@example.com"
+			},
+			{
+				"id": 609,
+				"name": "Alice Johnson",
+				"email": "alice@example.com"
+			},
+			{
+				"id": 610,
+				"name": "Bob Smith",
+				"email": "bob@example.com"
+			}
+		]
+	}
+]
