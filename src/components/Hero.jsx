@@ -26,9 +26,9 @@ const Hero = () => {
 							<h3 className="text-[8px]">React Native Developer</h3>
 						</div>
 					</div>
-					<div className="sm:flex flex-col text-right hidden">
+					<div className="sm:flex flex-col text-right hidden w-3/5 font-bold text-white relative right-6">
 						<p className="text-xs">CEO of Mobile Verse</p>
-						<h3 className="text-xs">Since 2015</h3>
+						<h3 className="text-xs font-normal">Since 2015</h3>
 					</div>
 				</div>
 			</div>
