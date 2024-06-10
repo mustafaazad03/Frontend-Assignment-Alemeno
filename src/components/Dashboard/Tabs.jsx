@@ -1,26 +1,27 @@
-import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const Tabs = () => {
+const Tabs = ({ onTabChange }) => {
 	const location = useLocation();
-	const [activeTab, setActiveTab] = useState("#all");
+	const [activeTab, setActiveTab] = useState("all");
 
-	// Define your tabs and their corresponding routes
+	useEffect(() => {
+		const hash = location.hash || "#all";
+		setActiveTab(hash);
+		if (onTabChange) {
+			onTabChange(hash.replace("#", ""));
+		}
+	}, [location, onTabChange]);
+
 	const tabs = [
 		{ name: "All", href: "#all" },
 		{ name: "In-Progress", href: "#progress" },
 		{ name: "Completed", href: "#completed" },
 	];
 
-	// Update the active tab based on the URL
-	useEffect(() => {
-		const currentHash = location.hash || "#all";
-		setActiveTab(currentHash);
-	}, [location]);
-
 	return (
 		<div>
-			{/* Mobile view: Select dropdown */}
 			<div className="sm:hidden">
 				<label htmlFor="tabs" className="sr-only">
 					Select a tab
@@ -34,6 +35,7 @@ const Tabs = () => {
 						const selectedTab = e.target.value;
 						setActiveTab(selectedTab);
 						window.location.hash = selectedTab;
+						onTabChange(selectedTab.replace("#", ""));
 					}}
 				>
 					{tabs.map((tab) => (
@@ -43,8 +45,6 @@ const Tabs = () => {
 					))}
 				</select>
 			</div>
-
-			{/* Desktop view: Tabs navigation */}
 			<div className="hidden sm:block">
 				<div className="border-b border-gray-200">
 					<nav className="-mb-px flex space-x-8" aria-label="Tabs">
@@ -52,12 +52,11 @@ const Tabs = () => {
 							<Link
 								key={tab.name}
 								to={tab.href}
-								className={`
-									${
-										activeTab === tab.href
-											? "border-primary/70 text-primary"
-											: "border-transparent text-dark/70 hover:border-dark/50 hover:text-dark"
-									} whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium cursor-pointer`}
+								className={`${
+									activeTab === tab.href
+										? "border-primary/70 text-primary"
+										: "border-transparent text-dark/70 hover:border-dark/50 hover:text-dark"
+								} whitespace-nowrap border-b-2 px-1 py-4 text-sm font-medium`}
 								aria-current={activeTab === tab.href ? "page" : undefined}
 							>
 								{tab.name}
@@ -71,3 +70,7 @@ const Tabs = () => {
 };
 
 export default Tabs;
+
+Tabs.propTypes = {
+	onTabChange: PropTypes.func,
+};

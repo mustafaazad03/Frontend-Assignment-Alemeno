@@ -22,7 +22,6 @@ const courseContext = createSlice({
 				(course) => course.id === action.payload
 			);
 			if (course) {
-				// Load students from local storage if available
 				const storedStudents =
 					JSON.parse(localStorage.getItem("students")) || {};
 				const studentsForCourse = storedStudents[action.payload] || [];
@@ -37,7 +36,12 @@ const courseContext = createSlice({
 				if (state.selectedCourse && state.selectedCourse.id === courseId) {
 					state.selectedCourse.students = course.students;
 				}
-				state.enrolledCourses.push({ courseId });
+				// Initialize progress for the new course enrollment
+				state.enrolledCourses.push({
+					courseId,
+					progress: 0,
+					syllabusProgress: course.syllabus.map(() => false),
+				});
 				localStorage.setItem(
 					"enrolledCourses",
 					JSON.stringify(state.enrolledCourses)
@@ -49,6 +53,38 @@ const courseContext = createSlice({
 				JSON.parse(localStorage.getItem("enrolledCourses")) || [];
 			state.enrolledCourses = enrolledCourses;
 		},
+		updateCourseProgress(state, action) {
+			const { courseId, progress } = action.payload;
+			const enrolledCourse = state.enrolledCourses.find(
+				(course) => course.courseId === courseId
+			);
+			if (enrolledCourse) {
+				enrolledCourse.progress = progress;
+				localStorage.setItem(
+					"enrolledCourses",
+					JSON.stringify(state.enrolledCourses)
+				);
+			}
+		},
+		updateSyllabusProgress(state, action) {
+			const { courseId, syllabusIndex, isComplete } = action.payload;
+			const enrolledCourse = state.enrolledCourses.find(
+				(course) => course.courseId === courseId
+			);
+			if (enrolledCourse) {
+				enrolledCourse.syllabusProgress[syllabusIndex] = isComplete;
+				// Recalculate the overall course progress
+				const completedItems =
+					enrolledCourse.syllabusProgress.filter(Boolean).length;
+				enrolledCourse.progress = Math.round(
+					(completedItems / enrolledCourse.syllabusProgress.length) * 100
+				);
+				localStorage.setItem(
+					"enrolledCourses",
+					JSON.stringify(state.enrolledCourses)
+				);
+			}
+		},
 	},
 });
 
@@ -57,6 +93,8 @@ export const {
 	selectCourse,
 	addStudentToCourse,
 	initializeEnrolledCourses,
+	updateCourseProgress,
+	updateSyllabusProgress,
 } = courseContext.actions;
 
 export default courseContext.reducer;

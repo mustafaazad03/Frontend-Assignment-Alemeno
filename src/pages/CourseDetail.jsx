@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectCourse } from "../redux/courseContext";
+import { selectCourse, updateSyllabusProgress } from "../redux/courseContext";
 import MainSection from "../components/CourseDetail/MainSection";
 import RightSection from "../components/CourseDetail/RightSection";
 import Container from "../components/Container";
@@ -13,6 +13,21 @@ const CourseDetail = () => {
 	const { id } = useParams();
 	const course = useSelector((state) => state.course.selectedCourse);
 	const courses = useSelector((state) => state.course.courses);
+	const enrolledCourses =
+		JSON.parse(localStorage.getItem("enrolledCourses")) || [];
+	const syllabusProgress =
+		enrolledCourses.find((course) => course.courseId === parseInt(id))
+			?.syllabusProgress || [];
+
+	const handleToggleComplete = (index, completed) => {
+		dispatch(
+			updateSyllabusProgress({
+				courseId: parseInt(id),
+				syllabusIndex: index,
+				isComplete: completed,
+			})
+		);
+	};
 
 	useEffect(() => {
 		if (courses.length > 0) {
@@ -48,7 +63,12 @@ const CourseDetail = () => {
 						{...course}
 					/>
 				</div>
-				<Syllabus {...course} />
+				<Syllabus
+					syllabus={course.syllabus}
+					courseId={course.id}
+					onToggleComplete={handleToggleComplete}
+					completed={syllabusProgress}
+				/>
 			</div>
 		</Container>
 	);
