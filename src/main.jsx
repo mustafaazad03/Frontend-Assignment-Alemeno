@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import CourseDetail from "./pages/CourseDetail";
 import "./index.css";
+import Navbar from "./components/Common/Navbar";
+import Footer from "./components/Common/Footer";
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +25,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<Provider store={store}>
+			<Navbar />
 			<RouterProvider router={router} />
+			<Footer />
 		</Provider>
 	</React.StrictMode>
 );

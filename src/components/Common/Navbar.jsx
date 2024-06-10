@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import searchIcon from "../assets/search.svg";
+import searchIcon from "../../assets/search.svg";
 
 const Navbar = () => {
 	const [showNavbar, setShowNavbar] = useState(true);
