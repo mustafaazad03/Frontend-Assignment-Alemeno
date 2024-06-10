@@ -4,18 +4,26 @@ import { initializeEnrolledCourses } from "./redux/courseContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import CourseDetail from "./pages/CourseDetail";
+import Dashboard from "./pages/Dashboard";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Home />,
-		errorElement: <div>Home not found</div>,
 	},
 	{
 		path: "/course/:id",
 		element: <CourseDetail />,
 		lazy: () => import("./pages/CourseDetail"),
-		errorElement: <div>Course not found</div>,
+	},
+	{
+		path: "/dashboard",
+		element: <Dashboard />,
+		lazy: () => import("./pages/Dashboard"),
+	},
+	{
+		path: "*",
+		element: <Home />,
 	},
 ]);
 

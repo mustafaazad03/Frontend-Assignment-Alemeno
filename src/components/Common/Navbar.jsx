@@ -29,17 +29,11 @@ const Navbar = () => {
 	}, [handleScroll, lastScrollY]);
 
 	const handleLoginSubmit = (user) => {
-		// Handle login form submission
-		console.log("Login submitted", user);
-		// Save user info to localStorage or handle accordingly
 		localStorage.setItem("userInfo", JSON.stringify(user));
 		setIsLoginModalOpen(false);
 	};
 
 	const handleSignupSubmit = (user) => {
-		// Handle signup form submission
-		console.log("Signup submitted", user);
-		// Save user info to localStorage or handle accordingly
 		localStorage.setItem("userInfo", JSON.stringify(user));
 		setIsSignupModalOpen(false);
 	};
@@ -57,12 +51,14 @@ const Navbar = () => {
 				<CourseSearch />
 				<div className="flex items-center space-x-3 text-white">
 					{userInfo ? (
-						<div className="flex items-end gap-1">
-							<p className="text-primary text-lg font-bold">Hey,</p>
-							<p className="text-primary text-sm mb-1">
-								{userInfo.name.split(" ")[0]}
-							</p>
-						</div>
+						<button type="button">
+							<Link
+								to="/dashboard"
+								className="bg-white font-medium border border-primary rounded-2xl p-2 px-4 text-primary hover:bg-primary hover:text-white transition-all duration-300 ease-in-out sm:flex hidden"
+							>
+								Dashboard
+							</Link>
+						</button>
 					) : (
 						<>
 							<button

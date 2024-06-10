@@ -6,6 +6,7 @@ import MainSection from "../components/CourseDetail/MainSection";
 import RightSection from "../components/CourseDetail/RightSection";
 import Container from "../components/Container";
 import Syllabus from "../components/CourseDetail/Syllabus";
+import Breadcrum from "../components/CourseDetail/Breadcrum";
 
 const CourseDetail = () => {
 	const dispatch = useDispatch();
@@ -23,9 +24,16 @@ const CourseDetail = () => {
 		return <div>Loading...</div>;
 	}
 
+	const pages = [
+		{ name: course.name, href: `/course/${course.id}`, current: true },
+	];
+
 	return (
 		<Container>
-			<div className="py-10 gap-10 flex flex-col">
+			<div className="mt-16">
+				<Breadcrum pages={pages} />
+			</div>
+			<div className="py-8 pt-6 gap-10 flex flex-col">
 				<img
 					src={course.thumbnail}
 					alt={course.name}
