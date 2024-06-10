@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 import {
 	CalendarDaysIcon,
 	ClockIcon,
@@ -6,6 +7,10 @@ import {
 	MapPinIcon,
 } from "@heroicons/react/24/outline";
 import PropTypes from "prop-types";
+import Modal from "./Modal";
+import EnrollmentForm from "./EnrollmentForm";
+import { useDispatch, useSelector } from "react-redux";
+import { addStudentToCourse } from "../../redux/courseContext";
 
 const RightSection = ({
 	time,
@@ -13,15 +18,48 @@ const RightSection = ({
 	duration,
 	location,
 	enrollmentStatus,
+	courseId,
 }) => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const dispatch = useDispatch();
+	const enrolledCourses = useSelector((state) => state.course.enrolledCourses);
+	const userInfo = JSON.parse(localStorage.getItem("userInfo")) || null;
+
+	const isEnrolled = enrolledCourses.some(
+		(course) => course.courseId === courseId
+	);
+
+	const handleEnroll = useCallback(() => {
+		if (userInfo && userInfo.name && userInfo.email) {
+			dispatch(
+				addStudentToCourse({
+					courseId,
+					student: userInfo,
+				})
+			);
+		} else {
+			setIsModalOpen(true);
+		}
+	}, [courseId, dispatch, userInfo]);
+
+	const handleFormSubmit = (student) => {
+		dispatch(addStudentToCourse({ courseId, student }));
+		localStorage.setItem("userInfo", JSON.stringify(student));
+		setIsModalOpen(false);
+	};
+
 	return (
 		<div className="flex flex-col gap-6 w-full md:w-auto lg:w-5/12">
 			<div className="flex md:flex-col gap-4 w-full">
 				<button
 					type="button"
-					className="py-3 px-6 bg-primary border border-primary hover:bg-transparent text-white hover:text-primary rounded-2xl flex items-center justify-center w-1/2 md:w-auto"
+					onClick={handleEnroll}
+					className="py-3 px-6 bg-primary border border-primary hover:bg-transparent text-white hover:text-primary rounded-2xl flex items-center justify-center w-1/2 md:w-auto disabled:hover:bg-primary disabled:cursor-not-allowed disabled:bg-primary/80 disabled:text-white disabled:opacity-80"
+					disabled={isEnrolled}
 				>
-					<span className="font-bold">Enroll Now</span>
+					<span className="font-bold">
+						{isEnrolled ? "Enrolled" : "Enroll Now"}
+					</span>
 				</button>
 				<button
 					type="button"
@@ -60,11 +98,15 @@ const RightSection = ({
 					{enrollmentStatus}
 				</div>
 			</div>
+			<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+				<h2 className="text-lg font-medium leading-6 text-gray-900 mb-4">
+					Student Enrollment
+				</h2>
+				<EnrollmentForm onSubmit={handleFormSubmit} />
+			</Modal>
 		</div>
 	);
 };
-
-export default RightSection;
 
 RightSection.propTypes = {
 	time: PropTypes.string.isRequired,
@@ -72,4 +114,7 @@ RightSection.propTypes = {
 	duration: PropTypes.string.isRequired,
 	location: PropTypes.string.isRequired,
 	enrollmentStatus: PropTypes.string.isRequired,
+	courseId: PropTypes.number.isRequired,
 };
+
+export default RightSection;

@@ -36,6 +36,7 @@ const CourseDetail = () => {
 					<RightSection
 						time={course.schedule.split(",")[1]}
 						scheduleDay={course.schedule.split(",")[0]}
+						courseId={course.id}
 						{...course}
 					/>
 				</div>

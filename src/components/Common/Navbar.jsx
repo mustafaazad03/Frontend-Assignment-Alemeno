@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import searchIcon from "../../assets/search.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [showNavbar, setShowNavbar] = useState(true);
@@ -28,9 +29,9 @@ const Navbar = () => {
 				showNavbar ? "transform translate-y-0" : "transform -translate-y-full"
 			}`}
 		>
-			<a href="/">
+			<Link to="/">
 				<h3 className="font-bold">Courses</h3>
-			</a>
+			</Link>
 			<div className="sm:flex relative items-center md:w-2/5 w-1/2 hidden">
 				<input
 					type="text"

@@ -29,6 +29,6 @@ export default SingleSyllabus;
 
 SingleSyllabus.propTypes = {
 	topic: PropTypes.string.isRequired,
-	week: PropTypes.string.isRequired,
+	week: PropTypes.number.isRequired,
 	content: PropTypes.string.isRequired,
 };
