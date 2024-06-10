@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import CourseDetail from "./pages/CourseDetail.jsx";
+import Home from "./pages/Home";
+import CourseDetail from "./pages/CourseDetail";
+import "./index.css";
 
 const router = createBrowserRouter([
 	{
@@ -12,15 +14,16 @@ const router = createBrowserRouter([
 		errorElement: <div>Home not found</div>,
 	},
 	{
-		// dynamic route for course detail page
 		path: "/course/:id",
-		element: <CourseDetail id="1" />,
+		element: <CourseDetail />,
 		errorElement: <div>Course not found</div>,
 	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<Provider store={store}>
+			<RouterProvider router={router} />
+		</Provider>
 	</React.StrictMode>
 );
