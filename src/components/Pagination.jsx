@@ -29,7 +29,7 @@ const Pagination = ({ totalPages }) => {
 				{currentPage > 1 && (
 					<div
 						onClick={() => handlePageChange(currentPage - 1)}
-						className="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 cursor-pointer"
+						className="inline-flex items-center border-t-2 border-transparent pr-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-dark cursor-pointer"
 					>
 						<ArrowLongLeftIcon
 							className="mr-3 h-5 w-5 text-gray-400"
@@ -47,7 +47,7 @@ const Pagination = ({ totalPages }) => {
 						className={`inline-flex items-center border-t-2 px-4 pt-4 text-sm font-medium cursor-pointer ${
 							currentPage === index + 1
 								? "border-indigo-500 text-indigo-600"
-								: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+								: "border-transparent text-gray-500 hover:border-gray-300 hover:text-dark"
 						}`}
 						aria-current={currentPage === index + 1 ? "page" : undefined}
 					>
@@ -59,7 +59,7 @@ const Pagination = ({ totalPages }) => {
 				{currentPage < totalPages && (
 					<div
 						onClick={() => handlePageChange(currentPage + 1)}
-						className="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 cursor-pointer"
+						className="inline-flex items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-dark cursor-pointer"
 					>
 						Next
 						<ArrowLongRightIcon

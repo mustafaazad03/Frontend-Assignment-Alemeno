@@ -3,7 +3,7 @@ import { UserIcon } from "@heroicons/react/20/solid";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
-const MainSection = ({ name, instructor, description }) => {
+const MainSection = ({ name, instructor, description, prerequisites }) => {
 	const [browseMore, setBrowseMore] = useState(false);
 	return (
 		<div className="flex flex-col gap-7 w-full md:w-3/5">
@@ -31,6 +31,14 @@ const MainSection = ({ name, instructor, description }) => {
 					</button>
 				)}
 			</div>
+			<div className="flex flex-col gap-4">
+				<h3 className="font-bold text-sm md:text-base">Prerequisites</h3>
+				<ul className="list-disc list-inside text-dark text-sm md:text-base capitalize">
+					{prerequisites.map((prerequisite, index) => (
+						<li key={index}>{prerequisite}</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 };
@@ -41,4 +49,5 @@ MainSection.propTypes = {
 	name: PropTypes.string.isRequired,
 	instructor: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
+	prerequisites: PropTypes.array.isRequired,
 };
