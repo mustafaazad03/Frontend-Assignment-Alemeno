@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { selectCourse } from "../redux/courseContext";
 import { UserIcon } from "@heroicons/react/20/solid";
+import { useCallback } from "react";
 
 const CourseCard = ({
 	id,
@@ -14,9 +15,9 @@ const CourseCard = ({
 }) => {
 	const dispatch = useDispatch();
 
-	const handleSelectCourse = () => {
+	const handleSelectCourse = useCallback(() => {
 		dispatch(selectCourse(id));
-	};
+	}, [dispatch, id]);
 
 	return (
 		<Link
@@ -38,7 +39,7 @@ const CourseCard = ({
 			</div>
 			<h3 className="font-bold mx-4">{name}</h3>
 			<div className="flex items-center gap-1 mx-4">
-				<UserIcon className="h-5 w-6 text-dark/70" />
+				<UserIcon className="h-5 w-6 text-dark/70" alt="Instructor Icon" />
 				<p className="text-sm">{instructor}</p>
 			</div>
 			<p className="text-sm w-full mx-4">
@@ -58,8 +59,6 @@ const CourseCard = ({
 	);
 };
 
-export default CourseCard;
-
 CourseCard.propTypes = {
 	id: PropTypes.number.isRequired,
 	thumbnail: PropTypes.string.isRequired,
@@ -68,3 +67,5 @@ CourseCard.propTypes = {
 	instructor: PropTypes.string.isRequired,
 	progress: PropTypes.number,
 };
+
+export default CourseCard;

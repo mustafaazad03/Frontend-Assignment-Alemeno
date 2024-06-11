@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import CourseDetail from "./pages/CourseDetail";
 import Dashboard from "./pages/Dashboard";
 
+// Define the routes for the application
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -14,15 +15,13 @@ const router = createBrowserRouter([
 	{
 		path: "/course/:id",
 		element: <CourseDetail />,
-		lazy: () => import("./pages/CourseDetail"),
 	},
 	{
 		path: "/dashboard",
 		element: <Dashboard />,
-		lazy: () => import("./pages/Dashboard"),
 	},
 	{
-		path: "*",
+		path: "/*",
 		element: <Home />,
 	},
 ]);
@@ -31,7 +30,11 @@ export const AppInitializer = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(initializeEnrolledCourses());
+		try {
+			dispatch(initializeEnrolledCourses());
+		} catch (error) {
+			console.error("Failed to initialize enrolled courses:", error);
+		}
 	}, [dispatch]);
 
 	return <RouterProvider router={router} />;

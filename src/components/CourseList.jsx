@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import Pagination from "./Pagination";
 import CourseCard from "./CourseCard";
+import { useMemo } from "react";
 
 const CourseList = () => {
 	const location = useLocation();
@@ -12,11 +13,11 @@ const CourseList = () => {
 	const courses = useSelector((state) => state.course.courses);
 
 	// Calculate pagination
-	const coursesPerPage = 9;
-	const totalPages = Math.ceil(courses.length / coursesPerPage);
-	const displayedCourses = courses.slice(
-		(page - 1) * coursesPerPage,
-		page * coursesPerPage
+	const COURSES_PER_PAGE = 9;
+	const totalPages = Math.ceil(courses.length / COURSES_PER_PAGE);
+	const displayedCourses = useMemo(
+		() => courses.slice((page - 1) * COURSES_PER_PAGE, page * COURSES_PER_PAGE),
+		[courses, page, COURSES_PER_PAGE]
 	);
 
 	return (

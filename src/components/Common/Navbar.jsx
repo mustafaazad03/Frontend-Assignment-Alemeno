@@ -9,7 +9,14 @@ const Navbar = () => {
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 	const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
-	const userInfo = JSON.parse(localStorage.getItem("userInfo")) || null;
+	const [userInfo, setUserInfo] = useState(null);
+
+	useEffect(() => {
+		const storedUserInfo = JSON.parse(localStorage.getItem("userInfo"));
+		if (storedUserInfo) {
+			setUserInfo(storedUserInfo);
+		}
+	}, []);
 
 	const handleScroll = useCallback(() => {
 		const currentScrollY = window.scrollY;
