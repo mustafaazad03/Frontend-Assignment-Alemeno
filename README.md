@@ -4,6 +4,13 @@
 
 **Courses** is a comprehensive platform designed to facilitate online learning. It allows users to explore, enroll, and track progress in various courses. The application is built using modern web technologies such as React, Redux, and React Router with CSS Framework Tailwind CSS along with optimum performance to improve user-experience.
 
+### Video Demo
+
+<figure>
+  <iframe src="./Courses.mp4" frameborder="0" allowfullscreen="true"> 
+</iframe>
+</figure>
+
 ### Table of Contents
 
 - [Getting Started](#getting-started)
