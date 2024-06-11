@@ -52,7 +52,7 @@ Make sure you have the following installed on your machine:
 To start the development server, run:
 
 ```bash
-npm start
+npm run dev
 ```
 
 This will start the application on `http://localhost:5173`.
