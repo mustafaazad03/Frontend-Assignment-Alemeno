@@ -7,7 +7,10 @@
 ### Video Demo
 
 
-https://github.com/mustafaazad03/Frontend-Assignment-Alemeno/assets/97380192/63ddd883-9f77-4608-9850-5060a215217d
+
+
+https://github.com/mustafaazad03/Frontend-Assignment-Alemeno/assets/97380192/7c984ef6-9bde-475c-b340-0f9a43f5f5be
+
 
 
 
