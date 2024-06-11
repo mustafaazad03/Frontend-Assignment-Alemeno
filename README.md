@@ -6,10 +6,11 @@
 
 ### Video Demo
 
-<figure>
-  <iframe src="./Courses.mp4" frameborder="0" allowfullscreen="true"> 
-</iframe>
-</figure>
+
+https://github.com/mustafaazad03/Frontend-Assignment-Alemeno/assets/97380192/63ddd883-9f77-4608-9850-5060a215217d
+
+
+
 
 ### Table of Contents
 
