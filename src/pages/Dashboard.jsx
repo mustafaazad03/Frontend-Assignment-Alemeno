@@ -9,8 +9,6 @@ const Dashboard = () => {
 	const pages = [{ name: "Dashboard", href: "/dashboard", current: true }];
 	const enrolledCourses = useSelector((state) => state.course.enrolledCourses);
 	const courses = useSelector((state) => state.course.courses);
-
-	// Filtered courses based on the tab
 	const getFilteredCourses = (filter) => {
 		switch (filter) {
 			case "progress":
